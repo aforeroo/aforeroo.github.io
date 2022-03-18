@@ -1,6 +1,40 @@
+/**paleta de colores
+al hacer esto es facil de controlar a nivel general cosas como el color*/
+
+:root {
+    /*para almacenar custom properties o variables css*/
+    /*colores*/
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+    --grisClaro: #dfe9f3;
+}
+
+
+/*hack para usar rem mas facil
+1 rem = 10px*/
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+
+/*para que al añadir padding los elementos
+ no crezcan mas de lo previsto*/
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -9,12 +43,49 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 3rem;
+    padding-right: 3rem;
     margin-top: 0;
     background-color: black;
 }
 
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 3.8rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+
+/* Utilidades */
+
+.w-100 {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .w-100 {
+        width: auto;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+
+/*
 .header {
     height: 95vh;
     background-image: linear-gradient(
@@ -24,11 +95,83 @@ body {
     url(../img/tree.jpg);
     background-size: cover;
     background-position: top;    
-    clip-path: polygon(0 0,100% 0, 100%  80%, 0 100%);
-    color: whitesmoke;
-    
+   
+    color: whitesmoke;    
+}
+*/
+
+.languages {
+    display: block;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    text-align: center;
+    text-align: center;
 }
 
-.lang {
-    background-color: black;
+.languages button {
+    margin: 0.5rem;
+}
+
+.header {
+    color: white;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(3, 3, 3, 0.3)), url(../img/tree.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    padding: 20rem 20rem 30rem 20rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left>* {
+    margin: 2rem 0;
+}
+
+.icono {
+    height: 6rem;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.location span {
+    font-size: 1.8rem;
+    margin: 0 2rem;
+}
+
+.foto-perfil {
+    border-radius: 50%;
+    height: 40rem;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.enlace {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+.enlace:hover {
+    border-radius: 10%;
+    background-color: #75757583;
+}
+
+.rigth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

@@ -1,62 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,100;1,300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,100;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Ingeniero Andrés Forero</title>
 </head>
+
 <body>
-     
+    <!-- Por cada seccion
+        1. agregar elementos y contenido texto(lorem)
+        2. posicionar y definir margenes y tamaños de fuete
+        3. aplicar estilos
+           repetir para la seccion siguiente
+     -->
+
+
+    <div class="languages">
+        <button disabled="True">
+            <p>Español</p>
+        </button>
+        <button>
+            <p>English</p>
+        </button>
+
+    </div>
 
     <header class="header">
-        
+
+
         <div class="left">
             <h1>Andrés Forero Osorio</h1>
-            <div class="location">
-                <img src="" alt="marker">
-                <p>Actualmente en Bogotá</p>
-            </div>
             <h2>Ingeniero de sistemas y computación</h2>
-        </div><!--fin left-->
+            <div class="location">
+                <img class="icono" src="img/icons/marker.png" alt="marker">
+                <h3><span>Actualmente en: </span> Bogotá, Colombia</h3>
+            </div>
+        </div>
+        <!--fin left-->
 
         <div class="rigth">
-            <img src="" alt="foto-perfil">
-            <p>contacto</p>
+            <img class="foto-perfil" src="./img/profile.jpg" alt="foto-perfil">
+
             <div class="links">
-                <div class="enlace">
-                    LinkedIn
-                </div>
-                <div class="enlance">
-                    Correo
-                </div>                
-            </div><!-- fin links-->
-        </div><!-- fin rigth --> 
+                <a class="enlace" href=" https://www.linkedin.com/in/forero-data" target="_blank">
+                    <img class="icono" src="img/icons/linkedin.png">
+                    <p>LinkedIn</p>
+                </a>
 
-    </header><!-- fin header -->
+                <a class="enlace" href="mailto: forero.data@gmail.com" target="_blank">
+                    <img class="icono " src="img/icons/email.png">
+                    <p>E-mail</p>
+                </a>
 
-    <div class="about">
+                <a class="enlace" href="#" target="_blank">
+                    <img class="icono " src="img/icons/cv.png ">
+                    <p>Curriculum</p>
+                </a>
+            </div>
+            <!-- fin links-->
+            <h4>forero-data@gmail.com</h4>
+
+        </div>
+        <!-- fin rigth -->
+
+    </header>
+    <!-- fin header -->
+
+    <div class="about ">
 
     </div>
 
-    <div class="studies">
+    <div class="studies ">
 
     </div>
 
 
-    <div class="skills">
+    <div class="skills ">
 
     </div>
 
-    <div class="tecnologies">
+    <div class="tecnologies ">
 
     </div>
 
-    <div class="experience">
+    <div class="experience ">
 
     </div>
 
@@ -66,4 +99,5 @@
 
 
 </body>
+
 </html>
