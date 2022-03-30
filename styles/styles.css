@@ -43,10 +43,11 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
     margin-top: 0;
     background-color: black;
+    color: white;
 }
 
 h1 {
@@ -59,6 +60,11 @@ h2 {
 
 h3 {
     font-size: 2.8rem;
+}
+
+h4 {
+    font-size: 2rem;
+    margin: 1rem;
 }
 
 h1,
@@ -117,19 +123,21 @@ h3 {
     background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(3, 3, 3, 0.3)), url(../img/tree.jpg);
     background-size: cover;
     background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-    padding: 20rem 20rem 30rem 20rem;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    padding: 5rem 0 1rem 0;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    
 }
 
 .left>* {
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
+
+
 .icono {
-    height: 6rem;
+    height: 5rem;
 }
 
 .location {
@@ -146,7 +154,7 @@ h3 {
 
 .foto-perfil {
     border-radius: 50%;
-    height: 40rem;
+    height: 25rem;
 }
 
 .links {
@@ -174,4 +182,79 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 3rem;
 }
+
+.rigth > .correo-text {
+    padding: 1rem 2rem;
+    background-color: #00000095;
+    border-radius: 10%;
+
+}
+
+.about {
+   margin: 5rem 5rem;
+   font-size: 2.5rem;
+   font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  text-align: right;
+  background-color: #0000007e;
+  padding: 2rem;
+  border-radius: 10%;
+  margin-bottom: 5rem;
+    
+}
+
+.campos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5rem;
+    padding-bottom: 5rem;
+    
+}
+
+
+.field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;    
+    color: white;
+}
+
+.field > .icono{
+    height: 12rem;
+}
+
+.education {
+    padding-bottom: 5rem;
+}
+
+.education > h2{
+    margin-bottom: 3rem;
+}
+
+.datos-u {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inst {
+    height: 12rem;
+}
+
+.u {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
